@@ -19,7 +19,12 @@ jobs:
           VPS_USER: ${{ secrets.VPS_USER }}
         run: |
           mkdir -p ~/.ssh
-          printf '%s\n' "$SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
+          cleaned=$(printf '%s' "$SSH_KEY" | tr -d '\r')
+          if printf '%s\n' "$cleaned" | grep -q "BEGIN OPENSSH PRIVATE KEY"; then
+            printf '%s\n' "$cleaned" > ~/.ssh/deploy_key
+          else
+            printf '%s' "$cleaned" | tr -d ' \n' | base64 -d > ~/.ssh/deploy_key
+          fi
           chmod 600 ~/.ssh/deploy_key
           if ! ssh-keygen -y -f ~/.ssh/deploy_key >/dev/null; then
             echo "La clé VPS_SSH_KEY est illisible. Ouvre le secret GitHub et recolle-la, de BEGIN à END, avec ses retours à la ligne."
