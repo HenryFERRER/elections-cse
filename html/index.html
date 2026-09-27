@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liste FO – Élections CSE Aveyron Labo 2026</title>
+  <meta name="description" content="Site de campagne de la liste FO pour les élections CSE Aveyron Labo 2026. Site non officiel du CSE.">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <style>
+    :root {
+      --fo: #e30613;
+      --ink: #1c1c1c;
+      --muted: #5c564f;
+      --paper: #f6f3ef;
+      --line: #e6dfd8;
+    }
+    body {
+      color: var(--ink);
+      background: #fff;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+    .topbar { height: 6px; background: var(--fo); }
+    .navbar { border-bottom: 1px solid var(--line); }
+    .navbar-brand img { height: 58px; width: auto; }
+    .nav-link { font-weight: 650; color: var(--ink) !important; }
+    .nav-link:hover, .nav-link:focus { color: var(--fo) !important; }
+    .hero {
+      background: var(--paper);
+      padding: 2.2rem 0 2.4rem;
+    }
+    .eyebrow {
+      color: var(--fo);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(1.85rem, 5vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      max-width: 18ch;
+    }
+    .lead { color: var(--muted); max-width: 38rem; }
+    .btn-fo {
+      background: var(--fo);
+      border-color: var(--fo);
+      color: #fff;
+      font-weight: 700;
+      min-height: 48px;
+      padding: 0.7rem 1.05rem;
+    }
+    .btn-fo:hover, .btn-fo:focus { background: #c10510; border-color: #c10510; color: #fff; }
+    .btn-line {
+      background: #fff;
+      border: 1px solid #d9d1c9;
+      color: var(--ink);
+      font-weight: 700;
+      min-height: 48px;
+      padding: 0.7rem 1.05rem;
+    }
+    .btn-line:hover, .btn-line:focus { border-color: var(--ink); color: var(--ink); }
+    section { padding: 3.2rem 0; }
+    section h2 {
+      font-size: clamp(1.55rem, 3vw, 2.1rem);
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
+    }
+    .soft { background: var(--paper); }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 0;
+      height: 100%;
+    }
+    .card h3 { font-size: 1.15rem; }
+    .num {
+      color: var(--fo);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+    }
+    .step {
+      border-top: 3px solid var(--fo);
+      background: #fff;
+      padding: 1.1rem 1rem 0.2rem;
+      height: 100%;
+    }
+    .question {
+      background: var(--ink);
+      color: #fff;
+    }
+    .question .form-control, .question .form-select {
+      border-radius: 0;
+      min-height: 48px;
+    }
+    textarea.form-control { min-height: 140px; }
+    .check-list { columns: 1; }
+    @media (min-width: 768px) {
+      .check-list { columns: 2; }
+    }
+    footer {
+      background: #111;
+      color: #d9d3cc;
+      font-size: 0.95rem;
+    }
+    footer a { color: #fff; }
+    .fo-logo { height: 92px; width: auto; }
+  </style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.force-ouvriere.fr/" target="_blank" rel="noopener noreferrer">
+        <img src="logo-fo.png" alt="Force Ouvrière">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projet">Pourquoi ce projet ?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#propositions">Nos propositions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#idees">Vos idées</a></li>
+          <li class="nav-item"><a class="nav-link" href="#liste">Notre liste</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fo">Force Ouvrière</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="accueil">
+    <div class="container">
+      <p class="eyebrow">Élections CSE Aveyron Labo 2026</p>
+      <h1>Un CSE plus proche, plus visible et plus utile au quotidien</h1>
+      <p class="lead mt-3">Les échanges avec la Direction, les demandes des salariés et les choix du CSE doivent pouvoir se suivre, et se voter.</p>
+      <p class="lead">Nous proposons une information mensuelle, une remontée réelle des sujets, et une défense concrète lorsque c’est nécessaire.</p>
+      <div class="d-flex flex-column flex-sm-row flex-wrap gap-2 mt-4">
+        <a class="btn btn-fo" href="#propositions">Découvrir nos propositions</a>
+        <a class="btn btn-line" href="#role">Comprendre le rôle du CSE</a>
+        <a class="btn btn-line" href="#idees">Nous faire une suggestion</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="projet">
+    <div class="container">
+      <h2>Pourquoi ce projet ?</h2>
+      <p>Les échanges entre le CSE et la Direction sont peu visibles. Les besoins des salariés, les conditions de travail et les choix d’œuvres sociales pèsent trop peu dans les décisions.</p>
+      <p class="mb-0" id="role">Le rôle du CSE est d’informer, de porter les demandes et, lorsque c’est nécessaire, de défendre les salariés. Nous voulons ce rôle concret, pas une liste d’intentions.</p>
+    </div>
+  </section>
+
+  <section class="soft" id="propositions">
+    <div class="container">
+      <h2>Nos propositions</h2>
+      <p class="text-secondary mb-4">Six sujets, chacun une seule fois. Plusieurs passeront par un site du CSE, distinct de cette page de campagne&nbsp;: jalons, formulaires, partenaires, page harcèlement et votes des salariés.</p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">01</p>
+            <h3>Une information mensuelle</h3>
+            <p class="mb-0">Une réunion d’information chaque mois sur les échanges entre le CSE et la Direction&nbsp;: prochaines réunions, thèmes abordés, avancement des projets, des problèmes et des demandes. Ce qui doit rester confidentiel n’est pas publié.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">02</p>
+            <h3>Vos sujets, portés à la Direction</h3>
+            <p class="mb-0">Besoins, problèmes, demandes, propositions, ressentis, remarques et idées des salariés. Ils remontent en réunion d’information ou par le formulaire du futur site du CSE. La Direction reçoit un suivi réel. Quand il le faut, les représentants défendent concrètement.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">03</p>
+            <h3>Le vote à bulletin secret</h3>
+            <p class="mb-0">Rétablir le vote à bulletin secret dans la charte du CSE, pour les décisions des représentants et pour le choix des thèmes qu’ils traitent. Les salariés votent aussi, par thème, les propositions des salariés et des élus&nbsp;: soirées, sorties, améliorations, partenaires.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">04</p>
+            <h3>Les conditions de travail</h3>
+            <p class="mb-0">Heures supplémentaires, badgeage, et les sujets qui se sont dégradés après des changements brutaux dans le laboratoire ces dernières années. Les salariés les priorisent par un vote ou un référendum. Les élus les portent ensuite à la Direction.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">05</p>
+            <h3>Harcèlement&nbsp;: un cadre à part</h3>
+            <p class="mb-0">Une page dédiée au harcèlement individuel et au harcèlement d’ambiance&nbsp;: information, contact privilégié, accompagnement plus spécialisé, confidentialité renforcée.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">06</p>
+            <h3>Pouvoir d’achat et œuvres sociales</h3>
+            <p class="mb-0">Les entreprises partenaires et leurs réductions, avec un formulaire pour qu’un salarié propose un nouveau partenaire. Les œuvres sociales sont réparties et priorisées selon les votes du personnel.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="question" id="idees">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5">
+          <h2>Et vous, qu’attendez-vous de votre CSE&nbsp;?</h2>
+          <p>Un sujet qui manque, une situation dans votre service, une idée. Ce formulaire sert à la campagne. Il ne remplace pas le futur site du CSE.</p>
+        </div>
+        <div class="col-lg-7">
+          <form id="suggestion" class="bg-white text-dark p-3 p-md-4" novalidate>
+            <h3 class="h4">Donnez-nous votre avis</h3>
+            <p class="small text-secondary">Le prénom, le pseudonyme et le service sont facultatifs. N’indiquez pas de données sensibles. Ce formulaire n’est pas encore relié à une boîte de réception&nbsp;: votre message n’est pas envoyé ni enregistré.</p>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label" for="nom">Prénom ou pseudonyme</label>
+                <input class="form-control" id="nom" name="nom" autocomplete="nickname">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="service">Service</label>
+                <input class="form-control" id="service" name="service">
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="sujet">Sujet</label>
+                <input class="form-control" id="sujet" name="sujet" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="reponse" name="reponse">
+                  <label class="form-check-label" for="reponse">Je souhaite une réponse</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-fo" type="submit">Donnez-nous votre avis</button>
+              </div>
+            </div>
+            <p id="form-note" class="small mt-3 mb-0 d-none" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="liste">
+    <div class="container">
+      <h2>La liste FO – Élections CSE 2026</h2>
+      <p>Les candidats seront présentés ici dès que la liste définitive sera arrêtée&nbsp;: prénom et nom, service, titulaire ou suppléant, et éventuellement une courte phrase.</p>
+      <p class="mb-0 text-secondary">Aucun nom n’est affiché tant que cette liste n’est pas communiquée.</p>
+    </div>
+  </section>
+
+  <section class="soft" id="fo">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-auto">
+          <img class="fo-logo" src="logo-fo.png" alt="Logo Force Ouvrière">
+        </div>
+        <div class="col">
+          <h2>La liste est présentée par Force Ouvrière</h2>
+          <p>Ce site présente la campagne de la liste FO pour les élections du CSE d’Aveyron Labo. Ce n’est ni le site national de Force Ouvrière, ni le site officiel du CSE.</p>
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <a class="btn btn-fo" href="https://www.force-ouvriere.fr/" target="_blank" rel="noopener noreferrer">Découvrir Force Ouvrière</a>
+            <a class="btn btn-line" href="https://12.force-ouvriere.org/" target="_blank" rel="noopener noreferrer">UD FO Aveyron</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4">
+    <div class="container">
+      <p class="mb-2">Site de campagne de la liste FO – Élections CSE Aveyron Labo 2026 – Site non officiel du CSE.</p>
+      <p class="mb-0"><a href="mentions.html">Mentions et confidentialité</a></p>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+  <script src="suggestion.js"></script>
+</body>
+</html>

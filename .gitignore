@@ -1,0 +1,32 @@
+# Secrets et accès — ne jamais envoyer sur GitHub
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+*.ppk
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+authorized_keys
+known_hosts
+acme.json
+*.kdbx
+credentials.json
+secrets.json
+
+# Administration du serveur — ne jamais envoyer
+00-hardening.conf
+prepare-admin.sh
+vps-docker-compose.yml
+
+# Outils locaux, hors site public
+qr/
+qrcode-liste-fo.png
+qrcode-liste-fo.svg
+site-public.zip
