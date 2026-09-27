@@ -122,7 +122,6 @@
           <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
           <li class="nav-item"><a class="nav-link" href="#projet">Pourquoi ce projet ?</a></li>
           <li class="nav-item"><a class="nav-link" href="#propositions">Nos propositions</a></li>
-          <li class="nav-item"><a class="nav-link" href="#idees">Vos idées</a></li>
           <li class="nav-item"><a class="nav-link" href="#liste">Notre liste</a></li>
           <li class="nav-item"><a class="nav-link" href="#fo">Force Ouvrière</a></li>
         </ul>
@@ -139,7 +138,6 @@
       <div class="d-flex flex-column flex-sm-row flex-wrap gap-2 mt-4">
         <a class="btn btn-fo" href="#propositions">Découvrir nos propositions</a>
         <a class="btn btn-line" href="#role">Comprendre le rôle du CSE</a>
-        <a class="btn btn-line" href="#idees">Nous faire une suggestion</a>
       </div>
     </div>
   </header>
@@ -203,51 +201,6 @@
     </div>
   </section>
 
-  <section class="question" id="idees">
-    <div class="container">
-      <div class="row g-4 align-items-start">
-        <div class="col-lg-5">
-          <h2>Et vous, qu’attendez-vous de votre CSE&nbsp;?</h2>
-          <p>Un sujet qui manque, une situation dans votre service, une idée. Ce formulaire sert à la campagne. Il ne remplace pas le futur site du CSE.</p>
-        </div>
-        <div class="col-lg-7">
-          <form id="suggestion" class="bg-white text-dark p-3 p-md-4" novalidate>
-            <h3 class="h4">Donnez-nous votre avis</h3>
-            <p class="small text-secondary">Le prénom, le pseudonyme et le service sont facultatifs. N’indiquez pas de données sensibles. Ce formulaire n’est pas encore relié à une boîte de réception&nbsp;: votre message n’est pas envoyé ni enregistré.</p>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label class="form-label" for="nom">Prénom ou pseudonyme</label>
-                <input class="form-control" id="nom" name="nom" autocomplete="nickname">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label" for="service">Service</label>
-                <input class="form-control" id="service" name="service">
-              </div>
-              <div class="col-12">
-                <label class="form-label" for="sujet">Sujet</label>
-                <input class="form-control" id="sujet" name="sujet" required>
-              </div>
-              <div class="col-12">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-control" id="message" name="message" required></textarea>
-              </div>
-              <div class="col-12">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="reponse" name="reponse">
-                  <label class="form-check-label" for="reponse">Je souhaite une réponse</label>
-                </div>
-              </div>
-              <div class="col-12">
-                <button class="btn btn-fo" type="submit">Donnez-nous votre avis</button>
-              </div>
-            </div>
-            <p id="form-note" class="small mt-3 mb-0 d-none" role="status"></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="liste">
     <div class="container">
       <h2>La liste FO – Élections CSE 2026</h2>
@@ -278,11 +231,9 @@
     <div class="container">
       <p class="mb-2">Site de campagne de la liste FO – Élections CSE Aveyron Labo 2026 – Site non officiel du CSE.</p>
       <p class="mb-0"><a href="mentions.html">Mentions et confidentialité</a></p>
-      <p class="mb-0">Test de mise à jour automatique.</p>
     </div>
   </footer>
 
   <script src="vendor/bootstrap.bundle.min.js"></script>
-  <script src="suggestion.js"></script>
 </body>
 </html>
