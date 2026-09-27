@@ -31,4 +31,4 @@ jobs:
             exit 1
           fi
           ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts
-          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes "$VPS_USER@$VPS_HOST" "cd /root/elections-cse && git pull --ff-only"
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes "$VPS_USER@$VPS_HOST" "sudo -n git -C /root/elections-cse pull --ff-only"
