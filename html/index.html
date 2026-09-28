@@ -74,7 +74,31 @@
       letter-spacing: -0.03em;
       max-width: 32ch;
     }
-    .lead { color: var(--muted); max-width: 38rem; }
+    .lead { color: var(--muted); max-width: none; }
+    .ability-list {
+      list-style: none;
+      margin: 1.15rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.85rem 2.5rem;
+      color: var(--muted);
+    }
+    @media (min-width: 768px) {
+      .ability-list { grid-template-columns: 1fr 1fr; }
+    }
+    .ability-list li {
+      position: relative;
+      padding-left: 1.15rem;
+    }
+    .ability-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 0.42rem;
+      height: 0.42rem;
+      background: var(--fo);
+    }
     .btn-fo {
       background: var(--fo);
       border-color: var(--fo);
@@ -168,7 +192,14 @@
       <p class="eyebrow">Élections CSE Aveyron Labo 2026</p>
       <h1>Une communication plus claire, pour agir sur ce qui compte vraiment.</h1>
       <p class="lead mt-3">Via un site dédié, vous pourrez suivre le travail du CSE, dans la limite des règles de confidentialité.</p>
-      <p class="lead">Vous pourrez y faire des propositions et des remarques, décrire une problématique, proposer un événement et vous y inscrire lorsque le plus grand nombre l’aura choisi. Vous pourrez aussi louer le matériel du CSE à un prix avantageux, voter les propositions du CSE et celles des autres salariés, trouver facilement les avantages des entreprises partenaires, et en proposer de nouvelles.</p>
+      <ul class="ability-list">
+        <li>Faire des propositions et des remarques.</li>
+        <li>Décrire une problématique.</li>
+        <li>Proposer un événement et vous y inscrire lorsque le plus grand nombre l’aura choisi.</li>
+        <li>Louer le matériel du CSE à un prix avantageux.</li>
+        <li>Voter les propositions du CSE et celles des autres salariés.</li>
+        <li>Trouver facilement les avantages des entreprises partenaires, et en proposer de nouvelles.</li>
+      </ul>
       <div class="d-flex flex-column flex-sm-row flex-wrap gap-2 mt-4">
         <a class="btn btn-fo" href="#propositions">Découvrir nos propositions</a>
         <a class="btn btn-line" href="#site">Le site des salariés</a>
