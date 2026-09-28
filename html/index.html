@@ -22,6 +22,39 @@
     .topbar { height: 6px; background: var(--fo); }
     .navbar { border-bottom: 1px solid var(--line); }
     .navbar-brand img { height: 58px; width: auto; }
+    .navbar-toggler {
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      background: #fff;
+    }
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 3px rgba(227, 6, 19, 0.28);
+    }
+    .navbar-toggler-icon {
+      width: 22px;
+      height: 2px;
+      background-color: var(--ink);
+      background-image: none;
+      position: relative;
+      display: block;
+    }
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 2px;
+      background: var(--ink);
+    }
+    .navbar-toggler-icon::before { top: -7px; }
+    .navbar-toggler-icon::after { top: 7px; }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon { background: transparent; }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before { top: 0; transform: rotate(45deg); }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after { top: 0; transform: rotate(-45deg); }
     .nav-link { font-weight: 650; color: var(--ink) !important; }
     .nav-link:hover, .nav-link:focus { color: var(--fo) !important; }
     .hero {
