@@ -75,6 +75,11 @@
       max-width: 32ch;
     }
     .lead { color: var(--muted); max-width: none; }
+    .lead-break {
+      margin-top: 1.35rem;
+      color: var(--ink);
+      font-weight: 700;
+    }
     .ability-list {
       list-style: none;
       margin: 1.15rem 0 0;
@@ -117,6 +122,15 @@
     }
     .change-question .cq-que { color: #fff; }
     .change-question .cq-verb { color: var(--fo); }
+    .punch {
+      margin: 2rem 0 0;
+      font-size: clamp(1.65rem, 4vw, 2.35rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      text-align: center;
+    }
+    .punch span { color: var(--fo); }
     .btn-fo {
       background: var(--fo);
       border-color: var(--fo);
@@ -208,9 +222,10 @@
   <header class="hero" id="accueil">
     <div class="container">
       <p class="eyebrow">Élections CSE Aveyron Labo 2026</p>
-      <h1>Une communication plus claire, pour agir sur ce qui compte vraiment.</h1>
-      <p class="lead mt-3">Via un site dédié, vous pourrez suivre le travail du CSE, dans la limite des règles de confidentialité.</p>
-      <p class="lead">Aujourd’hui, les conditions de travail se sont durcies au laboratoire. Le CSE n’a pas de moyen simple pour communiquer, et les avis comme les besoins des salariés remontent difficilement, souvent faute de temps. La transparence n’est pas la règle. Il faut que cela change.</p>
+      <h1>Une communication plus claire, pour agir sur ce qui compte vraiment, ensemble.</h1>
+      <p class="lead mt-3">Via un site dédié pour l’occasion, vous pourrez suivre le travail du CSE et y participer, dans la limite des règles de confidentialité.</p>
+      <p class="lead">Aujourd’hui, certaines conditions de travail se sont durcies au laboratoire. Le CSE n’a pas de moyen simple pour communiquer, et les avis comme les besoins des salariés remontent difficilement, souvent faute de temps.</p>
+      <p class="lead lead-break">La transparence n’est pas la règle. Il faut que cela change.</p>
       <p class="lead">La liste FO veut représenter le plus grand nombre et recréer le lien entre le CSE et l’ensemble des salariés. La communication en sera la base&nbsp;: prendre en compte, concrètement, les besoins exprimés, et les prioriser par des votes, selon les objectifs et selon ce que demande le plus grand nombre.</p>
       <div class="d-flex flex-column flex-sm-row flex-wrap gap-2 mt-4">
         <a class="btn btn-fo" href="#propositions">Découvrir nos propositions</a>
@@ -226,17 +241,11 @@
         <li>Savez-vous ce que débat ou défend votre CSE actuellement&nbsp;?</li>
         <li>Pouvez-vous citer une action concrète de votre CSE cette année&nbsp;?</li>
         <li>Connaissez-vous les membres du CSE et le rôle qui leur est attribué&nbsp;?</li>
-        <li>Avez-vous déjà parlé d’une difficulté au travail à votre CSE&nbsp;?</li>
         <li>Quand a lieu la prochaine réunion du CSE, et quels thèmes seront abordés&nbsp;?</li>
-        <li>Quelle personne que vous connaissez a été défendue par votre CSE&nbsp;?</li>
         <li>Si vous étiez confronté à un harcèlement, sauriez-vous quel membre du CSE alerter&nbsp;?</li>
-        <li>Avez-vous connaissance des dépenses du CSE pour les œuvres sociales&nbsp;?</li>
-        <li>Le prix de location du matériel du CSE déjà amorti vous paraît-il juste&nbsp;?</li>
+        <li>Avez-vous connaissance des dépenses du CSE et des projets d’investissement&nbsp;?</li>
         <li>Connaissez-vous les partenaires, et les réductions obtenues pour vous par votre CSE&nbsp;?</li>
         <li>Avez-vous profité d’un événement CSE dont vous avez pu choisir le thème ces dernières années (sport, sortie, séminaire, relaxation, autre)&nbsp;?</li>
-        <li>Trouvez-vous qu’il y a une égalité de représentation dans les participations aux événements du CSE&nbsp;?</li>
-        <li>Avez-vous déjà fait une proposition à votre CSE, et avez-vous reçu une réponse, positive ou négative&nbsp;?</li>
-        <li>Faites-vous confiance aux membres de votre CSE pour vous défendre devant la Direction quand vous avez des difficultés&nbsp;?</li>
       </ul>
       <p class="change-question"><span class="cq-que">Que</span> <span class="cq-verb">changeriez-vous&nbsp;?</span></p>
     </div>
@@ -251,28 +260,28 @@
           <article class="card p-4">
             <p class="num">01</p>
             <h3>Tenir les salariés informés, chaque mois</h3>
-            <p class="mb-0">Chaque mois, dire simplement ce qui a avancé, ce qui reste en attente, et ce qu’il est advenu des demandes. Ce qui doit rester confidentiel, à la demande de la Direction ou des personnes concernées, n’est pas rendu public.</p>
+            <p class="mb-0">Chaque mois, dire ce qui avance et ce qui attend. En réunion, les échanges avec les salariés orientent les priorités, pour mieux les représenter. Ce qui doit rester confidentiel ne fera pas partie de l’échange.</p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="card p-4">
             <p class="num">02</p>
             <h3>Les conditions de travail</h3>
-            <p class="mb-0">Recueillir les difficultés du quotidien, les classer selon ce qui pèse le plus, puis les porter dans les échanges avec la Direction. Le but est un travail plus tenable, pas une liste de promesses.</p>
+            <p class="mb-0">Les conditions de travail se sont détériorées ces dernières années. Sur le site, les salariés pourront remonter ces difficultés et en parler entre eux : certaines solutions pourront s’y trouver. Ce qui ne se règle pas sera débattu en réunion mensuelle, pour choisir ce qui est porté à la Direction.</p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="card p-4">
             <p class="num">03</p>
             <h3>Le harcèlement</h3>
-            <p class="mb-0">Le harcèlement, y compris le harcèlement d’ambiance, se traite à part. Une personne identifiée pour en parler, un échange protégé, et rien n’est exposé sans l’accord de la personne concernée.</p>
+            <p class="mb-0">Le harcèlement, y compris le harcèlement d’ambiance, se traite à part. Une page du site sera dédiée au traitement de ces problématiques, avec un accès unique pour le référent harcèlement et les personnes qui souhaitent un échange confidentiel renforcé.</p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="card p-4">
             <p class="num">04</p>
             <h3>Les demandes des salariés</h3>
-            <p class="mb-0">Un endroit pour déposer une difficulté, une idée ou une proposition d’événement, et recevoir une réponse, positive ou non. Une demande écrite ne doit pas rester sans suite.</p>
+            <p class="mb-0">Déposer une idée, une demande, ou tout autre sujet. Ces propositions pourront être votées par tous jusqu’à leur traitement final. Elles seront éventuellement débattues en réunion mensuelle, si l’ordre du jour le permet, selon leur importance.</p>
           </article>
         </div>
         <div class="col-md-6">
@@ -286,7 +295,7 @@
           <article class="card p-4">
             <p class="num">06</p>
             <h3>Les œuvres sociales</h3>
-            <p class="mb-0">Dire clairement à quoi sert l’argent, puis ajuster la répartition selon ce qui est vraiment utile aux salariés, plutôt que de reconduire les mêmes dépenses par habitude. Chacun pourra proposer une idée, puis voter pour celles qui lui semblent les meilleures.</p>
+            <p class="mb-0">Dire clairement à quoi sert l’argent, puis ajuster selon ce qui est vraiment utile, plutôt que par habitude. On pourra proposer un thème de soirée, une sortie ou une session sportive : ces propositions seront votées. Une fois le choix fait, chacun pourra s’inscrire à égalité, selon les places disponibles.</p>
           </article>
         </div>
         <div class="col-md-6">
@@ -312,14 +321,14 @@
       <h2>Un site pour les salariés d’Aveyron Labo</h2>
       <p>Ce site, réservé aux salariés, sert à suivre le travail du CSE et à y prendre part, dans la limite des règles de confidentialité.</p>
       <ul class="mb-0">
-        <li>Suivre, chaque mois, ce qui avance, ce qui attend, et ce qu’il advient des demandes.</li>
-        <li>Déposer une difficulté, une idée ou une remarque, et recevoir une réponse, positive ou non.</li>
-        <li>Proposer un événement, puis s’y inscrire lorsque le plus grand nombre l’a choisi.</li>
-        <li>Trouver les membres du CSE et le rôle de chacun.</li>
-        <li>Signaler une situation difficile, par thème, y compris le harcèlement, dans un cadre protégé.</li>
+        <li>Suivre, chaque mois, ce qui avance, ce qui attend, les dates et les thèmes. Ce qui est confidentiel n’en fait pas partie.</li>
+        <li>Remonter une difficulté de travail, en parler entre salariés, et suivre ce qui est porté en réunion mensuelle.</li>
+        <li>Accéder à la page harcèlement, réservée au référent et à un échange confidentiel renforcé.</li>
+        <li>Déposer une idée, une demande ou un autre sujet, et voter jusqu’à son traitement.</li>
         <li>Consulter le matériel à louer, avec des prix revus lorsqu’il est déjà amorti.</li>
-        <li>Consulter les entreprises partenaires, et en proposer de nouvelles.</li>
-        <li>Proposer une idée pour les œuvres sociales, puis voter pour celles qui semblent les meilleures.</li>
+        <li>Proposer une soirée, une sortie ou une session sportive, voter, puis s’inscrire à égalité selon les places.</li>
+        <li>Suivre et participer aux choix des dépenses des œuvres sociales.</li>
+        <li>Consulter les partenaires et leurs réductions, et en proposer de nouveaux.</li>
       </ul>
     </div>
   </section>
@@ -327,9 +336,11 @@
   <section id="liste">
     <div class="container">
       <h2>La liste FO – Élections CSE 2026</h2>
-      <p>Cette liste est portée par une seule candidature. Ce n’est pas un obstacle pour ce mandat. Ces deux années serviront à préparer le terrain.</p>
-      <p>L’objectif est de mener le plus grand nombre de ces propositions. Sans un vote massif, elles auront du mal à se réaliser dans leur ensemble. Les conditions de travail, les partenariats et les événements de cohésion ont besoin de ce poids pour avancer. Ce qui pourra être fait le sera, et sera repris selon ce qui ressortira pendant ces deux années.</p>
-      <p class="mb-0">Si ce vote manque, et que ces sujets restent limités, nous reviendrons plus nombreux aux prochaines élections. Une liste plus forte, de personnes qui veulent faire évoluer le laboratoire dans un esprit plus détendu et plus humain, pourra alors rendre concret ce qui est proposé ici, et plus encore.</p>
+      <p>Cette liste est portée par une seule candidature, face à un CSE historiquement implanté. Je sais que je ne pars pas favori. Pour que les choses changent, il faut pourtant commencer quelque part.</p>
+      <p>Ces élections, en ces temps difficiles, peuvent être un vrai tournant si une majorité de votes se tourne vers la liste FO. Ce poids permettra de rendre réalisables ces propositions, qui sont les miennes. Le but est de remettre l’échange entre le CSE et les salariés au centre, et de pouvoir se positionner avec force face aux injustices et aux contraintes de métier inutiles.</p>
+      <p>Sans ce vote, la difficulté sera plus grande. Un siège seul reste un siège seul s’il n’a pas la majorité des votes. Changer les choses demande toujours un front commun, face à la difficulté que peuvent représenter certains choix incohérents, comme il en existe dans toute entreprise.</p>
+      <p>Quoi qu’il arrive, une nouvelle liste sera présentée dans deux ans. Cette fois, j’espère que le virage sera complet : une liste forte, portée par plusieurs personnes qui veulent changer les conditions de travail et retrouver notre entreprise sous de meilleurs jours.</p>
+      <p class="punch mb-0">Préparons l’avenir, <span>dès à présent.</span></p>
     </div>
   </section>
 
