@@ -194,6 +194,18 @@
     }
     footer a { color: #fff; }
     .fo-logo { height: 92px; width: auto; }
+    @media (max-width: 767.98px) {
+      .lead,
+      section p:not(.punch):not(.change-question):not(.num),
+      section li,
+      footer p,
+      .sent {
+        text-align: justify;
+        text-align-last: start;
+        hyphens: auto;
+      }
+      .sent { display: block; }
+    }
   </style>
 </head>
 <body>
@@ -224,9 +236,9 @@
       <p class="eyebrow">Élections CSE Aveyron Labo 2026</p>
       <h1>Une communication plus claire, pour agir sur ce qui compte vraiment, ensemble.</h1>
       <p class="lead mt-3">Sur un site réservé aux salariés, distinct de cette page, vous pourrez suivre le travail du CSE et y participer, dans la limite des règles de confidentialité.</p>
-      <p class="lead">Aujourd’hui, certaines conditions de travail se sont durcies au laboratoire. Le CSE n’a pas de moyen simple pour communiquer, et les avis comme les besoins des salariés ont du mal à remonter, souvent faute de temps.</p>
-      <p class="lead lead-break">La transparence n’est pas la règle. Il faut que cela change.</p>
-      <p class="lead">La liste FO veut représenter le plus grand nombre et recréer le lien entre le CSE et l’ensemble des salariés. La communication en sera la base&nbsp;: prendre en compte, concrètement, les besoins exprimés, et les prioriser par des votes, selon les objectifs et selon ce que demande le plus grand nombre.</p>
+      <p class="lead"><span class="sent">Aujourd’hui, certaines conditions de travail se sont durcies au laboratoire.</span> <span class="sent">Le CSE n’a pas de moyen simple pour communiquer, et les avis comme les besoins des salariés ont du mal à remonter, souvent faute de temps.</span></p>
+      <p class="lead lead-break"><span class="sent">La transparence n’est pas la règle.</span> <span class="sent">Il faut que cela change.</span></p>
+      <p class="lead"><span class="sent">La liste FO veut représenter le plus grand nombre et recréer le lien entre le CSE et l’ensemble des salariés.</span> <span class="sent">La communication en sera la base&nbsp;: prendre en compte, concrètement, les besoins exprimés, et les prioriser par des votes, selon les objectifs et selon ce que demande le plus grand nombre.</span></p>
       <div class="d-flex flex-column flex-sm-row flex-wrap gap-2 mt-4">
         <a class="btn btn-fo" href="#propositions">Découvrir nos propositions</a>
         <a class="btn btn-line" href="#site">Le site des salariés</a>
@@ -254,34 +266,34 @@
   <section class="soft" id="propositions">
     <div class="container">
       <h2>Nos propositions</h2>
-      <p class="text-secondary mb-4">Huit priorités. Elles pourront être suivies grâce à un site destiné aux salariés d’Aveyron Labo, distinct de cette page de campagne.</p>
+      <p class="text-secondary mb-4"><span class="sent">Huit priorités.</span> <span class="sent">Elles pourront être suivies grâce à un site destiné aux salariés d’Aveyron Labo, distinct de cette page de campagne.</span></p>
       <div class="row g-3">
         <div class="col-md-6">
           <article class="card p-4">
             <p class="num">01</p>
             <h3>Tenir les salariés informés, chaque mois</h3>
-            <p class="mb-0">Chaque mois, dire ce qui avance et ce qui attend, ainsi que les dépenses et les projets d’investissement. Les membres du CSE et leur rôle y figureront. En réunion, les échanges avec les salariés orientent les priorités, pour mieux les représenter. Ce qui doit rester confidentiel ne fera pas partie de l’échange.</p>
+            <p class="mb-0"><span class="sent">Chaque mois, dire ce qui avance et ce qui attend, ainsi que les dépenses et les projets d’investissement.</span> <span class="sent">Les membres du CSE et leur rôle y figureront.</span> <span class="sent">En réunion, les échanges avec les salariés orientent les priorités, pour mieux les représenter.</span> <span class="sent">Ce qui doit rester confidentiel ne fera pas partie de l’échange.</span></p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="card p-4">
             <p class="num">02</p>
             <h3>Les conditions de travail</h3>
-            <p class="mb-0">Les conditions de travail se sont détériorées ces dernières années. Sur le site, les salariés pourront remonter ces difficultés et en parler entre eux : certaines solutions pourront s’y trouver. Ce qui ne se règle pas sera débattu en réunion mensuelle, pour choisir ce qui est porté à la Direction.</p>
+            <p class="mb-0"><span class="sent">Les conditions de travail se sont détériorées ces dernières années.</span> <span class="sent">Sur le site, les salariés pourront remonter ces difficultés et en parler entre eux : certaines solutions pourront s’y trouver.</span> <span class="sent">Ce qui ne se règle pas sera débattu en réunion mensuelle, pour choisir ce qui est porté à la Direction.</span></p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="card p-4">
             <p class="num">03</p>
             <h3>Le harcèlement</h3>
-            <p class="mb-0">Le harcèlement, y compris le harcèlement d’ambiance, se traite à part. Une page du site sera dédiée à ces situations. Le référent harcèlement y a un accès réservé. L’échange avec la personne qui le souhaite reste confidentiel.</p>
+            <p class="mb-0"><span class="sent">Le harcèlement, y compris le harcèlement d’ambiance, se traite à part.</span> <span class="sent">Une page du site sera dédiée à ces situations.</span> <span class="sent">Le référent harcèlement y a un accès réservé.</span> <span class="sent">L’échange avec la personne qui le souhaite reste confidentiel.</span></p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="card p-4">
             <p class="num">04</p>
             <h3>Les demandes des salariés</h3>
-            <p class="mb-0">Déposer une idée, une demande, ou tout autre sujet. Ces propositions pourront être votées par tous jusqu’à leur traitement final. Elles seront éventuellement débattues en réunion mensuelle, si l’ordre du jour le permet, selon leur importance.</p>
+            <p class="mb-0"><span class="sent">Déposer une idée, une demande, ou tout autre sujet.</span> <span class="sent">Ces propositions pourront être votées par tous jusqu’à leur traitement final.</span> <span class="sent">Elles seront éventuellement débattues en réunion mensuelle, si l’ordre du jour le permet, selon leur importance.</span></p>
           </article>
         </div>
         <div class="col-md-6">
@@ -295,21 +307,21 @@
           <article class="card p-4">
             <p class="num">06</p>
             <h3>Les œuvres sociales</h3>
-            <p class="mb-0">Dire clairement à quoi sert l’argent, puis ajuster selon ce qui est vraiment utile, plutôt que par habitude. On pourra proposer un thème de soirée, une sortie ou une session sportive : ces propositions seront votées. Une fois le choix fait, chacun pourra s’inscrire à égalité, selon les places disponibles.</p>
+            <p class="mb-0"><span class="sent">Dire clairement à quoi sert l’argent, puis ajuster selon ce qui est vraiment utile, plutôt que par habitude.</span> <span class="sent">On pourra proposer un thème de soirée, une sortie ou une session sportive : ces propositions seront votées.</span> <span class="sent">Une fois le choix fait, chacun pourra s’inscrire à égalité, selon les places disponibles.</span></p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="card p-4">
             <p class="num">07</p>
             <h3>Les entreprises partenaires</h3>
-            <p class="mb-0">Chercher des partenaires utiles, avec des réductions concrètes au quotidien. Un salarié pourra proposer un commerce ou un service qu’il connaît déjà.</p>
+            <p class="mb-0"><span class="sent">Chercher des partenaires utiles, avec des réductions concrètes au quotidien.</span> <span class="sent">Un salarié pourra proposer un commerce ou un service qu’il connaît déjà.</span></p>
           </article>
         </div>
         <div class="col-md-6">
           <article class="card p-4">
             <p class="num">08</p>
             <h3>Sport, relaxation et autres activités</h3>
-            <p class="mb-0">Le sport, la relaxation et les autres temps réguliers ne seront reconduits que si les salariés les demandent. Une habitude ne suffit pas.</p>
+            <p class="mb-0"><span class="sent">Le sport, la relaxation et les autres temps réguliers ne seront reconduits que si les salariés les demandent.</span> <span class="sent">Une habitude ne suffit pas.</span></p>
           </article>
         </div>
       </div>
@@ -321,7 +333,7 @@
       <h2>Un site pour les salariés d’Aveyron Labo</h2>
       <p>Ce site, réservé aux salariés, sert à suivre le travail du CSE et à y prendre part, dans la limite des règles de confidentialité.</p>
       <ul class="mb-0">
-        <li>Suivre, chaque mois, ce qui avance, ce qui attend, les dates, les thèmes, les dépenses et les projets d’investissement. Ce qui est confidentiel n’en fait pas partie.</li>
+        <li><span class="sent">Suivre, chaque mois, ce qui avance, ce qui attend, les dates, les thèmes, les dépenses et les projets d’investissement.</span> <span class="sent">Ce qui est confidentiel n’en fait pas partie.</span></li>
         <li>Connaître les membres du CSE et le rôle de chacun.</li>
         <li>Remonter une difficulté de travail, en parler entre salariés, et suivre ce qui est porté en réunion mensuelle.</li>
         <li>Accéder à la page harcèlement : un accès réservé pour le référent, et un échange confidentiel pour la personne concernée.</li>
@@ -337,12 +349,12 @@
   <section id="liste">
     <div class="container">
       <h2>La liste FO – Élections CSE 2026</h2>
-      <p>Je m’appelle Henry FERRER. Oui, cette liste est portée par une seule candidature, la mienne, face à une liste déjà en place. Je sais que je ne pars pas favori.</p>
-      <p>J’ai déjà été élu du CSE, comme suppléant, et je me suis battu pour des salariés. Ces combats n’avaient pas le poids d’une majorité derrière eux. C’est ce qui m’a amené à quitter cette fonction. Aujourd’hui, je vois les conditions de travail de tous se durcir encore. Je ne pouvais pas rester sans agir.</p>
-      <p>Pendant une période compliquée, je n’ai vu personne du CSE actuel. J’ai compris que, pour que les choses changent, il faut renouveler celles et ceux qui y siègent. Pour cela, il faut commencer quelque part. Le but n’est pas de tout changer maintenant. Il est de remettre l’échange entre le CSE et les salariés au centre, et d’être présent là où se décident, avec la Direction, notre avenir et nos conditions de travail.</p>
-      <p>Un vote massif est indispensable, et il l’est pour une raison précise. Au CSE, un siège seul reste un siège seul : ce scrutin ne multiplie pas les places. Ce qui change, c’est le poids de la parole. Si le plus grand nombre se tourne vers la liste FO, je pourrai parler en son nom lorsque les conditions de travail, les dépenses et les priorités seront discutées. Ces sujets ne resteront pas ceux d’une voix isolée. Ce qui peut déjà bouger bougera pendant ce mandat. Sans ce vote, la difficulté sera plus grande : un siège sans le poids des voix a peu de prise.</p>
-      <p>Ces deux années serviront à préparer le terrain. Le travail du CSE sera suivi chaque mois. Les difficultés, les idées et les priorités pourront être dites, discutées, puis votées. Ce qui ne se règle pas entre salariés sera porté en réunion. À la fin du mandat, il restera une base solide : un lien rétabli, des sujets identifiés, une façon de travailler que d’autres pourront reprendre.</p>
-      <p>Dans deux ans, une nouvelle liste pourra s’appuyer sur cette base. Elle sera portée par des personnes engagées, qui connaîtront déjà les dossiers et qui voudront les continuer. Le relais sera prêt.</p>
+      <p><span class="sent">Je m’appelle Henry FERRER.</span> <span class="sent">Oui, cette liste est portée par une seule candidature, la mienne, face à une liste déjà en place.</span> <span class="sent">Je sais que je ne pars pas favori.</span></p>
+      <p><span class="sent">J’ai déjà été élu du CSE, comme suppléant, et je me suis battu pour des salariés.</span> <span class="sent">Ces combats n’avaient pas le poids d’une majorité derrière eux.</span> <span class="sent">C’est ce qui m’a amené à quitter cette fonction.</span> <span class="sent">Aujourd’hui, je vois les conditions de travail de tous se durcir encore.</span> <span class="sent">Je ne pouvais pas rester sans agir.</span></p>
+      <p><span class="sent">Pendant une période compliquée, je n’ai vu personne du CSE actuel.</span> <span class="sent">J’ai compris que, pour que les choses changent, il faut renouveler celles et ceux qui y siègent.</span> <span class="sent">Pour cela, il faut commencer quelque part.</span> <span class="sent">Le but n’est pas de tout changer maintenant.</span> <span class="sent">Il est de remettre l’échange entre le CSE et les salariés au centre, et d’être présent là où se décident, avec la Direction, notre avenir et nos conditions de travail.</span></p>
+      <p><span class="sent">Un vote massif est indispensable, et il l’est pour une raison précise.</span> <span class="sent">Au CSE, un siège seul reste un siège seul : ce scrutin ne multiplie pas les places.</span> <span class="sent">Ce qui change, c’est le poids de la parole.</span> <span class="sent">Si le plus grand nombre se tourne vers la liste FO, je pourrai parler en son nom lorsque les conditions de travail, les dépenses et les priorités seront discutées.</span> <span class="sent">Ces sujets ne resteront pas ceux d’une voix isolée.</span> <span class="sent">Ce qui peut déjà bouger bougera pendant ce mandat.</span> <span class="sent">Sans ce vote, la difficulté sera plus grande : un siège sans le poids des voix a peu de prise.</span></p>
+      <p><span class="sent">Ces deux années serviront à préparer le terrain.</span> <span class="sent">Le travail du CSE sera suivi chaque mois.</span> <span class="sent">Les difficultés, les idées et les priorités pourront être dites, discutées, puis votées.</span> <span class="sent">Ce qui ne se règle pas entre salariés sera porté en réunion.</span> <span class="sent">À la fin du mandat, il restera une base solide : un lien rétabli, des sujets identifiés, une façon de travailler que d’autres pourront reprendre.</span></p>
+      <p><span class="sent">Dans deux ans, une nouvelle liste pourra s’appuyer sur cette base.</span> <span class="sent">Elle sera portée par des personnes engagées, qui connaîtront déjà les dossiers et qui voudront les continuer.</span> <span class="sent">Le relais sera prêt.</span></p>
       <p class="punch mb-0">Préparons l’avenir, <span>dès à présent.</span></p>
     </div>
   </section>
@@ -355,7 +367,7 @@
         </div>
         <div class="col">
           <h2>La liste est présentée par Force Ouvrière</h2>
-          <p>Ce site présente la campagne de la liste FO pour les élections du CSE d’Aveyron Labo. Ce n’est ni le site national de Force Ouvrière, ni le site officiel du CSE.</p>
+          <p><span class="sent">Ce site présente la campagne de la liste FO pour les élections du CSE d’Aveyron Labo.</span> <span class="sent">Ce n’est ni le site national de Force Ouvrière, ni le site officiel du CSE.</span></p>
           <div class="d-flex flex-column flex-sm-row gap-2">
             <a class="btn btn-fo" href="https://www.force-ouvriere.fr/" target="_blank" rel="noopener noreferrer">Découvrir Force Ouvrière</a>
             <a class="btn btn-line" href="https://12.force-ouvriere.org/" target="_blank" rel="noopener noreferrer">UD FO Aveyron</a>
