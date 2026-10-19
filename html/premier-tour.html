@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1er tour – Liste FO, élections CSE Aveyron Labo 2026</title>
+  <meta name="description" content="Page du premier tour des titulaires : propositions de la liste FO aux élections CSE Aveyron Labo 2026. Site non officiel du CSE.">
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <script defer src="https://stats.liste-fo-aveyron-labo-2026.fun/script.js" data-website-id="0d8542b3-f557-4706-8ed2-f6d2daebd502"></script>
+  <style>
+    :root {
+      --fo: #e30613;
+      --ink: #1c1c1c;
+      --muted: #5c564f;
+      --paper: #f6f3ef;
+      --line: #e6dfd8;
+    }
+    html { scroll-padding-top: 5.5rem; }
+    body {
+      color: var(--ink);
+      background: #fff;
+      font-family: "Segoe UI", system-ui, sans-serif;
+    }
+    .topbar { height: 6px; background: var(--fo); }
+    .navbar { border-bottom: 1px solid var(--line); }
+    .navbar-brand img { height: 58px; width: auto; }
+    .navbar-toggler {
+      width: 48px;
+      height: 48px;
+      padding: 0;
+      border: 1px solid var(--ink);
+      border-radius: 0;
+      background: #fff;
+    }
+    .navbar-toggler:focus {
+      box-shadow: 0 0 0 3px rgba(227, 6, 19, 0.28);
+    }
+    .navbar-toggler-icon {
+      width: 22px;
+      height: 2px;
+      background-color: var(--ink);
+      background-image: none;
+      position: relative;
+      display: block;
+    }
+    .navbar-toggler-icon::before,
+    .navbar-toggler-icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 2px;
+      background: var(--ink);
+    }
+    .navbar-toggler-icon::before { top: -7px; }
+    .navbar-toggler-icon::after { top: 7px; }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon { background: transparent; }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before { top: 0; transform: rotate(45deg); }
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after { top: 0; transform: rotate(-45deg); }
+    .nav-link { font-weight: 650; color: var(--ink) !important; }
+    .nav-link:hover, .nav-link:focus { color: var(--fo) !important; }
+    .tour-switch {
+      display: inline-flex;
+      border: 1px solid var(--ink);
+      flex: 0 0 auto;
+    }
+    .tour-switch a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 0 0.7rem;
+      color: var(--ink);
+      font-weight: 800;
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .tour-switch a[aria-current="page"] {
+      background: var(--fo);
+      color: #fff;
+    }
+    .tour-switch a:hover:not([aria-current="page"]),
+    .tour-switch a:focus:not([aria-current="page"]) { color: var(--fo); }
+    @media (max-width: 400px) {
+      .tour-switch a { padding: 0 0.45rem; font-size: 0.72rem; }
+    }
+    .hero {
+      background: var(--paper);
+      padding: 2.2rem 0 2.4rem;
+    }
+    .eyebrow {
+      color: var(--fo);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(1.85rem, 5vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      max-width: 32ch;
+    }
+    .lead { color: var(--muted); max-width: none; }
+    .lead-break {
+      margin-top: 1.35rem;
+      color: var(--ink);
+      font-weight: 700;
+    }
+    .ability-list {
+      list-style: none;
+      margin: 1.15rem 0 0;
+      padding: 0;
+      display: grid;
+      gap: 0.85rem 2.5rem;
+      align-items: start;
+      color: var(--muted);
+    }
+    @media (min-width: 768px) {
+      .ability-list { grid-template-columns: 1fr 1fr; }
+    }
+    #projet .ability-list { grid-template-columns: 1fr; }
+    @media (min-width: 1200px) {
+      #projet .ability-list { grid-template-columns: 1fr 1fr; }
+    }
+    .ability-list li {
+      position: relative;
+      padding-left: 1.15rem;
+    }
+    .ability-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 0.42rem;
+      height: 0.42rem;
+      background: var(--fo);
+    }
+    .change-question {
+      margin: 1.75rem auto 0;
+      padding: 0.75rem 1.1rem;
+      max-width: 22rem;
+      background: var(--ink);
+      font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      text-align: center;
+    }
+    .change-question .cq-que { color: #fff; }
+    .change-question .cq-verb { color: var(--fo); }
+    .punch {
+      margin: 2rem 0 0;
+      font-size: clamp(1.65rem, 4vw, 2.35rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      text-align: center;
+    }
+    .punch span { color: var(--fo); }
+    .btn-fo {
+      background: var(--fo);
+      border-color: var(--fo);
+      color: #fff;
+      font-weight: 700;
+      min-height: 48px;
+      padding: 0.7rem 1.05rem;
+    }
+    .btn-fo:hover, .btn-fo:focus { background: #c10510; border-color: #c10510; color: #fff; }
+    .btn-line {
+      background: #fff;
+      border: 1px solid #d9d1c9;
+      color: var(--ink);
+      font-weight: 700;
+      min-height: 48px;
+      padding: 0.7rem 1.05rem;
+    }
+    .btn-line:hover, .btn-line:focus { border-color: var(--ink); color: var(--ink); }
+    section { padding: 3.2rem 0; }
+    section h2 {
+      font-size: clamp(1.55rem, 3vw, 2.1rem);
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
+    }
+    .soft { background: var(--paper); }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 0;
+      height: 100%;
+    }
+    .card h3 { font-size: 1.15rem; }
+    .num {
+      color: var(--fo);
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+    }
+    .step {
+      border-top: 3px solid var(--fo);
+      background: #fff;
+      padding: 1.1rem 1rem 0.2rem;
+      height: 100%;
+    }
+    .question {
+      background: var(--ink);
+      color: #fff;
+    }
+    .question .form-control, .question .form-select {
+      border-radius: 0;
+      min-height: 48px;
+    }
+    textarea.form-control { min-height: 140px; }
+    .check-list { columns: 1; }
+    @media (min-width: 768px) {
+      .check-list { columns: 2; }
+    }
+    footer {
+      background: #111;
+      color: #d9d3cc;
+      font-size: 0.95rem;
+    }
+    footer a { color: #fff; }
+    .fo-logo { height: 92px; width: auto; }
+    @media (max-width: 767.98px) {
+      .lead,
+      section p:not(.punch):not(.change-question):not(.num),
+      section li,
+      footer p,
+      .sent {
+        text-align: justify;
+        text-align-last: start;
+        hyphens: auto;
+      }
+      .sent { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://www.force-ouvriere.fr/" target="_blank" rel="noopener noreferrer">
+        <img src="logo-fo.png" alt="Force Ouvrière">
+      </a>
+      <div class="d-flex align-items-center gap-2 ms-auto ms-lg-3 order-lg-2">
+        <div class="tour-switch" role="group" aria-label="Choisir le tour">
+          <a href="premier-tour.html" aria-current="page">1er tour</a>
+          <a href="index.html">2nd tour</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse order-lg-1" id="menu">
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projet">Pourquoi ce projet ?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#propositions">Nos propositions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#site">Le site des salariés</a></li>
+          <li class="nav-item"><a class="nav-link" href="#liste">Notre liste</a></li>
+          <li class="nav-item"><a class="nav-link" href="#fo">Force Ouvrière</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" id="accueil">
+    <div class="container">
+      <p class="eyebrow">Élections CSE Aveyron Labo 2026</p>
+      <h1>Une communication plus claire, pour agir sur ce qui compte vraiment, ensemble.</h1>
+      <p class="lead mt-3">Sur un site réservé aux salariés, distinct de cette page, vous pourrez suivre le travail du CSE et y participer, dans la limite des règles de confidentialité.</p>
+      <p class="lead"><span class="sent">Aujourd’hui, certaines conditions de travail se sont durcies au laboratoire.</span> <span class="sent">Le CSE n’a pas de moyen simple pour communiquer, et les avis comme les besoins des salariés ont du mal à remonter, souvent faute de temps.</span></p>
+      <p class="lead lead-break"><span class="sent">La transparence n’est pas la règle.</span> <span class="sent">Il faut que cela change.</span></p>
+      <p class="lead"><span class="sent">La liste FO veut représenter le plus grand nombre et recréer le lien entre le CSE et l’ensemble des salariés.</span> <span class="sent">La communication en sera la base&nbsp;: prendre en compte, concrètement, les besoins exprimés, et les prioriser par des votes, selon les objectifs et selon ce que demande le plus grand nombre.</span></p>
+      <div class="d-flex flex-column flex-sm-row flex-wrap gap-2 mt-4">
+        <a class="btn btn-fo" href="#propositions">Découvrir nos propositions</a>
+        <a class="btn btn-line" href="#site">Le site des salariés</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="projet">
+    <div class="container">
+      <h2>Pourquoi ce projet ?</h2>
+      <ul class="ability-list">
+        <li>Savez-vous ce que débat ou défend votre CSE actuellement&nbsp;?</li>
+        <li>Pouvez-vous citer une action concrète de votre CSE cette année&nbsp;?</li>
+        <li>Connaissez-vous les membres du CSE et le rôle qui leur est attribué&nbsp;?</li>
+        <li>Quand a lieu la prochaine réunion du CSE, et quels thèmes seront abordés&nbsp;?</li>
+        <li>Si vous étiez confronté à un harcèlement, sauriez-vous quel membre du CSE alerter&nbsp;?</li>
+        <li>Avez-vous connaissance des dépenses du CSE et des projets d’investissement&nbsp;?</li>
+        <li>Connaissez-vous les partenaires, et les réductions obtenues pour vous par votre CSE&nbsp;?</li>
+        <li>Avez-vous profité d’un événement CSE dont vous avez pu choisir le thème ces dernières années (sport, sortie, séminaire, relaxation, autre)&nbsp;?</li>
+      </ul>
+      <p class="change-question"><span class="cq-que">Que</span> <span class="cq-verb">changeriez-vous&nbsp;?</span></p>
+    </div>
+  </section>
+
+  <section class="soft" id="propositions">
+    <div class="container">
+      <h2>Nos propositions</h2>
+      <p class="text-secondary mb-4"><span class="sent">Huit priorités.</span> <span class="sent">Elles pourront être suivies grâce à un site destiné aux salariés d’Aveyron Labo, distinct de cette page de campagne.</span></p>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">01</p>
+            <h3>Tenir les salariés informés, chaque mois</h3>
+            <p class="mb-0"><span class="sent">Chaque mois, dire ce qui avance et ce qui attend, ainsi que les dépenses et les projets d’investissement.</span> <span class="sent">Les membres du CSE et leur rôle y figureront.</span> <span class="sent">En réunion, les échanges avec les salariés orientent les priorités, pour mieux les représenter.</span> <span class="sent">Ce qui doit rester confidentiel ne fera pas partie de l’échange.</span></p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">02</p>
+            <h3>Les conditions de travail</h3>
+            <p class="mb-0"><span class="sent">Les conditions de travail se sont détériorées ces dernières années.</span> <span class="sent">Sur le site, les salariés pourront remonter ces difficultés et en parler entre eux : certaines solutions pourront s’y trouver.</span> <span class="sent">Ce qui ne se règle pas sera débattu en réunion mensuelle, pour choisir ce qui est porté à la Direction.</span></p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">03</p>
+            <h3>Le harcèlement</h3>
+            <p class="mb-0"><span class="sent">Le harcèlement, y compris le harcèlement d’ambiance, se traite à part.</span> <span class="sent">Une page du site sera dédiée à ces situations.</span> <span class="sent">Le référent harcèlement y a un accès réservé.</span> <span class="sent">L’échange avec la personne qui le souhaite reste confidentiel.</span></p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">04</p>
+            <h3>Les demandes des salariés</h3>
+            <p class="mb-0"><span class="sent">Déposer une idée, une demande, ou tout autre sujet.</span> <span class="sent">Ces propositions pourront être votées par tous jusqu’à leur traitement final.</span> <span class="sent">Elles seront éventuellement débattues en réunion mensuelle, si l’ordre du jour le permet, selon leur importance.</span></p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">05</p>
+            <h3>La location de matériel</h3>
+            <p class="mb-0">Revoir les prix de location lorsque le matériel du CSE est déjà amorti, pour qu’ils restent accessibles, sans être symboliques ni excessifs.</p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">06</p>
+            <h3>Les œuvres sociales</h3>
+            <p class="mb-0"><span class="sent">Dire clairement à quoi sert l’argent, puis ajuster selon ce qui est vraiment utile, plutôt que par habitude.</span> <span class="sent">On pourra proposer un thème de soirée, une sortie ou une session sportive : ces propositions seront votées.</span> <span class="sent">Une fois le choix fait, chacun pourra s’inscrire à égalité, selon les places disponibles.</span></p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">07</p>
+            <h3>Les entreprises partenaires</h3>
+            <p class="mb-0"><span class="sent">Chercher des partenaires utiles, avec des réductions concrètes au quotidien.</span> <span class="sent">Un salarié pourra proposer un commerce ou un service qu’il connaît déjà.</span></p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card p-4">
+            <p class="num">08</p>
+            <h3>Sport, relaxation et autres activités</h3>
+            <p class="mb-0"><span class="sent">Le sport, la relaxation et les autres temps réguliers ne seront reconduits que si les salariés les demandent.</span> <span class="sent">Une habitude ne suffit pas.</span></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="site">
+    <div class="container">
+      <h2>Un site pour les salariés d’Aveyron Labo</h2>
+      <p>Ce site, réservé aux salariés, sert à suivre le travail du CSE et à y prendre part, dans la limite des règles de confidentialité.</p>
+      <ul class="mb-0">
+        <li><span class="sent">Suivre, chaque mois, ce qui avance, ce qui attend, les dates, les thèmes, les dépenses et les projets d’investissement.</span> <span class="sent">Ce qui est confidentiel n’en fait pas partie.</span></li>
+        <li>Connaître les membres du CSE et le rôle de chacun.</li>
+        <li>Remonter une difficulté de travail, en parler entre salariés, et suivre ce qui est porté en réunion mensuelle.</li>
+        <li>Accéder à la page harcèlement : un accès réservé pour le référent, et un échange confidentiel pour la personne concernée.</li>
+        <li>Déposer une idée, une demande ou un autre sujet, et voter jusqu’à son traitement.</li>
+        <li>Consulter le matériel à louer, avec des prix revus lorsqu’il est déjà amorti.</li>
+        <li>Proposer une soirée, une sortie ou une session sportive, voter, puis s’inscrire à égalité selon les places.</li>
+        <li>Suivre et participer aux choix des dépenses des œuvres sociales.</li>
+        <li>Consulter les partenaires et leurs réductions, et en proposer de nouveaux.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="liste">
+    <div class="container">
+      <h2>La liste FO – Élections CSE 2026</h2>
+      <p><span class="sent">Je m’appelle Henry FERRER.</span> <span class="sent">Oui, cette liste est portée par une seule candidature, la mienne, face à une liste déjà en place.</span> <span class="sent">Je sais que je ne pars pas favori.</span></p>
+      <p><span class="sent">J’ai déjà été élu du CSE, comme suppléant, et je me suis battu pour des salariés.</span> <span class="sent">Ces combats n’avaient pas le poids d’une majorité derrière eux.</span> <span class="sent">C’est ce qui m’a amené à quitter cette fonction.</span> <span class="sent">Aujourd’hui, je vois les conditions de travail de tous se durcir encore.</span> <span class="sent">Je ne pouvais pas rester sans agir.</span></p>
+      <p><span class="sent">Pendant une période compliquée, je n’ai vu personne du CSE actuel.</span> <span class="sent">J’ai compris que, pour que les choses changent, il faut renouveler celles et ceux qui y siègent.</span> <span class="sent">Pour cela, il faut commencer quelque part.</span> <span class="sent">Le but n’est pas de tout changer maintenant.</span> <span class="sent">Il est de remettre l’échange entre le CSE et les salariés au centre, et d’être présent là où se décident, avec la Direction, notre avenir et nos conditions de travail.</span></p>
+      <p><span class="sent">Un vote massif est indispensable, et il l’est pour une raison précise.</span> <span class="sent">Au CSE, un siège seul reste un siège seul : ce scrutin ne multiplie pas les places.</span> <span class="sent">Ce qui change, c’est le poids de la parole.</span> <span class="sent">Si le plus grand nombre se tourne vers la liste FO, je pourrai parler en son nom lorsque les conditions de travail, les dépenses et les priorités seront discutées.</span> <span class="sent">Ces sujets ne resteront pas ceux d’une voix isolée.</span> <span class="sent">Ce qui peut déjà bouger bougera pendant ce mandat.</span> <span class="sent">Sans ce vote, la difficulté sera plus grande : un siège sans le poids des voix a peu de prise.</span></p>
+      <p><span class="sent">Ces deux années serviront à préparer le terrain.</span> <span class="sent">Le travail du CSE sera suivi chaque mois.</span> <span class="sent">Les difficultés, les idées et les priorités pourront être dites, discutées, puis votées.</span> <span class="sent">Ce qui ne se règle pas entre salariés sera porté en réunion.</span> <span class="sent">À la fin du mandat, il restera une base solide : un lien rétabli, des sujets identifiés, une façon de travailler que d’autres pourront reprendre.</span></p>
+      <p><span class="sent">Dans deux ans, une nouvelle liste pourra s’appuyer sur cette base.</span> <span class="sent">Elle sera portée par des personnes engagées, qui connaîtront déjà les dossiers et qui voudront les continuer.</span> <span class="sent">Le relais sera prêt.</span></p>
+      <p class="punch mb-0">Préparons l’avenir, <span>dès à présent.</span></p>
+    </div>
+  </section>
+
+  <section class="soft" id="fo">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-auto">
+          <img class="fo-logo" src="logo-fo.png" alt="Logo Force Ouvrière">
+        </div>
+        <div class="col">
+          <h2>La liste est présentée par Force Ouvrière</h2>
+          <p><span class="sent">Ce site présente la campagne de la liste FO pour les élections du CSE d’Aveyron Labo.</span> <span class="sent">Ce n’est ni le site national de Force Ouvrière, ni le site officiel du CSE.</span></p>
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <a class="btn btn-fo" href="https://www.force-ouvriere.fr/" target="_blank" rel="noopener noreferrer">Découvrir Force Ouvrière</a>
+            <a class="btn btn-line" href="https://12.force-ouvriere.org/" target="_blank" rel="noopener noreferrer">UD FO Aveyron</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4">
+    <div class="container">
+      <p class="mb-2">Site de campagne de la liste FO – Élections CSE Aveyron Labo 2026 – Site non officiel du CSE.</p>
+      <p class="mb-0"><a href="mentions.html">Mentions et confidentialité</a></p>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap.bundle.min.js"></script>
+</body>
+</html>
